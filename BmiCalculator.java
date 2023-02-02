@@ -47,23 +47,38 @@ public class BmiCalculator {
 //=====================================================================================================================
 	// Here is the Optimized way of doing the same code #Method 2
 	/*
-	 * import java.util.Scanner;
-	 * 
-	 * public class BmiCalculator {
-	 * 
-	 * public static void main(String[] args) { Scanner sc = new Scanner(System.in);
-	 * System.out.print("Input weight in kilograms: "); double weight =
-	 * sc.nextDouble(); System.out.print("Input height in meters: "); double height
-	 * = sc.nextDouble(); double BMI = weight / (height * height);
-	 * System.out.println("\nThe Body Mass Index (BMI) is " + BMI + " kg/m2");
-	 * 
-	 * String classification; if (BMI < 18.5) { classification = "Under weight"; }
-	 * else if (BMI <= 24.9) { classification = "Normal"; } else if (BMI <= 29.9) {
-	 * classification = "Over weight"; } else if (BMI <= 34.9) { classification =
-	 * "Obesity (Class 1)"; } else if (BMI <= 39.9) { classification =
-	 * "Obesity (Class 2)"; } else { classification = "Extreme Obesity"; }
-	 * System.out.println("Your BMI is: " + BMI + " kg/m2 | Classification: " +
-	 * classification); } }
+	import java.util.Scanner;
+
+public class BmiCalculator {
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Input weight in kilograms: ");
+    double weight = sc.nextDouble();
+    System.out.print("Input height in meters: ");
+    double height = sc.nextDouble();
+    double BMI = weight / (height * height);
+    System.out.println("\nThe Body Mass Index (BMI) is " + BMI + " kg/m2");
+
+    String classification;
+    if (BMI < 18.5) {
+      classification = "Under weight";
+    } else if (BMI <= 24.9) {
+      classification = "Normal";
+    } else if (BMI <= 29.9) {
+      classification = "Over weight";
+    } else if (BMI <= 34.9) {
+      classification = "Obesity (Class 1)";
+    } else if (BMI <= 39.9) {
+      classification = "Obesity (Class 2)";
+    } else {
+      classification = "Extreme Obesity";
+    }
+    System.out.println("Your BMI is: " + BMI + " kg/m2 | Classification: " + classification);
+  }
+}
+
+	 
 	 */
 
-}
+
