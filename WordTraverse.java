@@ -3,6 +3,7 @@ public class WordTraverse {
 	public static void main(String[] args) {
 		String w = "";
 		String s = "Hello i am Aditya";
+		s=s+" ";
 
 		for (int i = 0; i < s.length(); i++) 
 		{
