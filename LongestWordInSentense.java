@@ -1,6 +1,6 @@
 package in.words;
 
-public class LongestWordInSentense {
+public class LongestWordInSentence {
 	public static void main(String[] args) {
 		String s = "hello iam Aditya";
 		String w = "";
