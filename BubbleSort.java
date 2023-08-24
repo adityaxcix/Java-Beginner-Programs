@@ -1,38 +1,29 @@
-package programs;
+package sorting;
 
 public class BubbleSort {
-
-	public static void main(String[] args)
-	{
-	int arr[] = new int[] {54,87,12,67,2342,234,5,0};
+	public static void main(String[] args) {
+		int arr[] = { 12, 89, 54, 90, 44, 0, 4 };
 		
-		System.out.println("The array of Intergers is ");
-		for(int i=0;i<arr.length;i++)
-		{
-			System.out.print(arr[i]+ " ");
-		}
-		System.out.println("\n");
-		int length = arr.length; 
-		System.out.println("sorting through Bubble sort\n");
-
-		for(int i = 0; i < length-1; i++)
-		{
-			for(int j = 0; j < length-i-1; j++)
-			{
-				if(arr[j] > arr[j+1])
-				{
-					int temp = arr[j];
-					arr[j] = arr[j+1];
-					arr[j+1] = temp;
+		int temp = 0;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[i] > arr[j]) {
+					temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
 				}
 			}
 		}
+		System.out.println("Sorted Array");
 
-		System.out.print("The Sorted array is: \n");
-		for(int i=0;i<arr.length;i++)
-		{
-			System.out.print(arr[i]+ " ");
+		for (int i : arr) {
+			System.out.print(i + " ");
 		}
+		System.out.println();
+		System.out.println(arr[1]);
+		System.out.println("Second largest");
+		System.out.println(arr[arr.length-2]);
+		
+		
 	}
-
 }
